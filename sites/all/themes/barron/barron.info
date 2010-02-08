@@ -1,0 +1,30 @@
+; $Id: barron.info,v 1.1.2.2 2008/06/02 05:12:38 jwolf Exp $
+
+name = Barron
+description = XHTML & CSS based two column theme
+core = 6.x
+version = VERSION
+engine = phptemplate
+regions[sidebar] = Sidebar
+regions[content_top] = Content Top
+regions[content_bottom] = Content Bottom
+regions[footer] = Footer
+features[] = logo
+features[] = favicon
+features[] = name
+features[] = slogan
+features[] = mission
+features[] = node_user_picture
+features[] = comment_user_picture
+features[] = primary_links
+features[] = search
+stylesheets[all][] = style.css
+
+
+
+; Information added by drupal.org packaging script on 2008-06-02
+version = "6.x-1.0"
+core = "6.x"
+project = "barron"
+datestamp = "1212384603"
+

@@ -1,0 +1,26 @@
+/** $Id: $
+ * Barroness - DRUPAL-6
+ */
+
+
+#content {
+	float: right;
+	margin: 20px 0;
+	overflow: hidden;
+	width: 680px;
+}
+
+/* sidebar styles */
+
+#sidebar-wrapper {
+	background: transparent url('images/sidebar_bottom.jpg') no-repeat right bottom;
+	float: left;
+	margin-top: 20px;
+	width: 290px;
+}
+
+#sidebar {
+	background: transparent url('images/sidebar_top.jpg') no-repeat right top;
+	margin: 0 0 20px;
+	padding: 10px 30px 0 0;
+}
