@@ -280,6 +280,9 @@ body{
     overflow:hidden;
     background:url(../images/vanguardia.png) no-repeat;
     float:left;
+    line-height:64px;
+    position:relative;
+    z-index:5;
 }
 
 #sampleapptext{

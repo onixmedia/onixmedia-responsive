@@ -14,7 +14,7 @@ $('#video-margin').hide();
         
         });
     
-    $('.slider-content img').click(  
+    $('.slider-content img.videopopup').click(  
         function(){
             
             var videoid = $(this).attr("rel");
