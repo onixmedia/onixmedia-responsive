@@ -64,11 +64,13 @@
 ?>
           <div id="container">
         <div id="header">
-            <div id="logo">
-                <a href="#" id="img-logo">Onix Media, Frameworks for Digital Content</a>
-            </div>
-            <div id="head-menu">
-                <a id="contactbtn" href="#">Contact</a>
+            <div id="header-inner">
+                <div id="logo">
+                    <a href="index.html" id="img-logo">Onix Media, Frameworks for Digital Content</a>
+                </div>
+                <div id="head-menu">
+                    <a id="contactbtn" href="contact.html">Contact</a>
+                </div>
             </div>
         </div>
         <div id="main">
@@ -81,7 +83,7 @@
             </div>
             <div id="footer">
                 <a href="http://www.onixmedia.net/" id="onixlink" class="footlinks firstlink">onixmedia.net</a>
-                <a href="/" id="homelink" class="footlinks">Home</a>
+                <a href="index.html" id="homelink" class="footlinks">Home</a>
                 <a href="contact.html" id="contactlink" class="footlinks">Contact</a>
             <div id="links"> </div>
         </div>

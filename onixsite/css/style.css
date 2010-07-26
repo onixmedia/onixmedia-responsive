@@ -16,6 +16,12 @@ body{
     background:#131313 url(../images/header.png) top center no-repeat;
 }
 
+#header-inner{
+    width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 #logo{
     float:left;
 }
@@ -27,12 +33,12 @@ body{
     width:360px;
     height:26px;
     background:url(../images/logo.png) no-repeat;
-    margin-left:30px;
+    margin-left:-3px;
     margin-top:22px;
 }
 
 #head-menu{
-    width:737px;
+    width:738px;
     float:left;
     font-size:18px;
     margin-top:27px;
@@ -98,6 +104,8 @@ body{
     margin-right:auto;
     background:url(../images/caption-txt.png) no-repeat;
     padding-bottom:32px;
+    text-indent:-9999px;
+    overflow:hidden;
 }
 
 #body-content{
@@ -215,18 +223,6 @@ body{
 }
 
 .next{
-    float:left;
-    position:relative;
-    z-index:1;
-    left:-16px;
-    top:-90px;
-    width:32px;
-    height:32px;
-    background:url(../images/prev.png) no-repeat;
-    cursor:pointer;
-}
-
-.prev {
     float:right;
     position:relative;
     z-index:1;
@@ -235,6 +231,18 @@ body{
     width:32px;
     height:32px;
     background:url(../images/next.png) no-repeat;
+    cursor:pointer;
+}
+
+.prev {
+    float:left;
+    position:relative;
+    z-index:1;
+    left:-16px;
+    top:-90px;
+    width:32px;
+    height:32px;
+    background:url(../images/prev.png) no-repeat;
     cursor:pointer;
 }
 
@@ -498,18 +506,23 @@ object{
 }
 
 .inputs{
-    width:350px;
+    width:340px;
     height:30px;
     border:0px;
-    background:url(../images/textbox.png) no-repeat;
+    background:url(../images/textBox.png) no-repeat;
     margin-bottom:10px;
+    font-family:helvetica;
+    font-size:13px;
+    padding:0 5px;
 }
 
 #contactTxtArea{
-    width:349px;
+    width:339px;
     height:180px;
     margin-top:10px;
-    
+    font-family:helvetica;
+    font-size:13px;
+    padding:5px;
 }
 
 #checkboxes{
