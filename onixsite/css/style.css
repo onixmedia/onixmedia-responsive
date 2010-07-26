@@ -98,7 +98,7 @@ body{
 }
 
 #main-caption{
-    width:652px;
+    width:655px;
     height:132px;
     margin-left:auto;
     margin-right:auto;
@@ -141,11 +141,15 @@ body{
 
 .rows{
     width:322px;
-    height:51px;
+    height:50px;
     background:url(../images/line.png) bottom center no-repeat;
     color:#fff;
     font-size:14px;
     font-weight:bold;
+}
+
+.first{
+    margin-top:-6px;
 }
 
 .lefts{
@@ -157,18 +161,13 @@ body{
     float:right;
 }
 
-.first .thumbs{
-    margin-top:1px;
-    position:relative;
-    top:8px;
-    margin-right:1px;
-}
 
 .thumbs{
-    margin-top:5px;
-    position:relative;
-    top:8px;
-    margin-right:1px;
+    width:142px;
+    padding-left:36px;
+    height:50px;
+    line-height:50px;
+    
 }
 
 .last{
@@ -274,7 +273,7 @@ body{
 }
 
 #sampleapp{
-    margin-left:92px;
+    margin-left:60px;
     padding-top:14px;
     width:369px;
     float:left;
@@ -302,7 +301,7 @@ body{
 
 #sociallinks{
     margin-left:83px;
-    margin-top:-12px;
+    margin-top:20px;
     float:left;
 }
 
@@ -432,10 +431,13 @@ object{
 }
 
 #closure{
-    width:641px;
+    width:741px;
     margin-left:auto;
     margin-right:auto;
     margin-top:26px;
+    font-size:12px;
+    color:#cccccc;
+    text-align:center;
 }
 
 /**Thanks Page**/

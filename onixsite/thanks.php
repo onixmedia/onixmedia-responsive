@@ -90,7 +90,7 @@
         </div>
         
       </div>
-      <div id="closure"><img src="images/closure.png" alt="&copy;Copyright 2010 Código Onix, S.A. de C.V. OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad® and iPhone are registered trademarks of Apple Computer, Inc. USA" /></div>
+    <div id="closure">&copy;Copyright 2010 C&oacute;digo Onix, S.A. de C.V.<br /> OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA</div>
     
 
 </body>
