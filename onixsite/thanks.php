@@ -3,7 +3,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <title>Onix Media</title>
-    <link type="text/css" rel="stylesheet" href="./css/style.css" />
+    <?
+    $lang = $_GET['lang'];
+    
+    if($lang=="es"){
+        echo '<link type="text/css" rel="stylesheet" href="./css/style_es.css" />';
+        $idioma = "in spanish";
+    }else{
+        echo '<link type="text/css" rel="stylesheet" href="./css/style.css" />';
+        $idioma = "in english";
+    }
+    ?>
 </head>
 <body class="thanks">
     
@@ -54,10 +64,10 @@
       }
     }
     
-    $to = "mr.mmss@gmail.com";
+    $to = "mail@mail.com";
     $subject = $fname .' '. $lname .' tried to contact you through Onix Media\'s contact form.';
     $headers = 'From: onixcontact@onixmedia.com';
-    $body = $fname ." ". $lname ." from ". $company ." tried to contact you through Onix Media's contact form. His contact information is the next: \n Name: ".$fname ." ". $lname ."\n\r Email: ".$email."\n\r Phone number: ".$phone."\n\r\n\r Together with his information he left the following message: \n\r ".$msg."\n\r".$interestsF."\n\r".$contactF;
+    $body = $fname ." ". $lname ." from ". $company ." tried to contact you through Onix Media's contact form '.$idioma.'. His contact information is the next: \n Name: ".$fname ." ". $lname ."\n\r Email: ".$email."\n\r Phone number: ".$phone."\n\r\n\r Together with his information he left the following message: \n\r ".$msg."\n\r".$interestsF."\n\r".$contactF;
 
     mail($to, $subject, $body, $headers);
     
@@ -66,31 +76,32 @@
         <div id="header">
             <div id="header-inner">
                 <div id="logo">
-                    <a href="index.html" id="img-logo">Onix Media, Frameworks for Digital Content</a>
+                    <a href="index.php<? if($lang=="es"){echo '?lang=es';} ?>" id="img-logo">Onix Media, Frameworks for Digital Content</a>
                 </div>
                 <div id="head-menu">
-                    <a id="contactbtn" href="contact.html">Contact</a>
+                    <a id="langotggle_no" class="incontact" href="index.php<? if($lang!="es"){echo '?lang=es';} ?>"><? if($lang!="es"){echo 'Espa&ntilde;ol';}else{echo 'English';} ?></a>
+                    <a id="contactbtn" href="contact.php<? if($lang=="es"){echo '?lang=es';} ?>">Contact</a>
                 </div>
             </div>
         </div>
         <div id="main">
             <div id="main-inner">
                 
-                <h1 id="thanksHead">Thank you for contacting us. An OnixMedia representative will respond promptly with the information requested. </h1>
+                <h1 id="thanksHead"><? if($lang=="es"){echo 'Gracias por contactarnos. Un representante de OnixMedia enviar&aacute; en breve la informaci&oacute;n solicitada.';}else{ echo 'Thank you for contacting us. An OnixMedia representative will respond promptly with the information requested.'; } ?> </h1>
                 
-                <a href="index.html" id="thanksBack">Back to Homepage</a>
+                <a href="index.php<? if($lang=="es"){echo '?lang=es';} ?>" id="thanksBack"><? if($lang=="es"){echo '&laquo;&nbsp;&nbsp;&nbsp;&nbsp;Regresar a la p&aacute;gina de inicio';}else{ echo '&laquo;&nbsp;&nbsp;&nbsp;&nbsp;Back to Homepage'; } ?></a>
                 
             </div>
             <div id="footer">
                 <a href="http://www.onixmedia.net/" id="onixlink" class="footlinks firstlink">onixmedia.net</a>
-                <a href="index.html" id="homelink" class="footlinks">Home</a>
-                <a href="contact.html" id="contactlink" class="footlinks">Contact</a>
+                <a href="index.php<? if($lang=="es"){echo '?lang=es';} ?>" id="homelink" class="footlinks">Home</a>
+                <a href="contact.php<? if($lang=="es"){echo '?lang=es';} ?>" id="contactlink" class="footlinks">Contact</a>
             <div id="links"> </div>
         </div>
         </div>
         
       </div>
-    <div id="closure">&copy;Copyright 2010 C&oacute;digo Onix, S.A. de C.V.<br /> OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA</div>
+    <div id="closure"><? if($lang=="es"){echo '&copy;Copyright 2010 Derechos Reservados C&oacute;digo Onix, S.A. de C.V.<br />OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA';}else{ echo '&copy;Copyright 2010 C&oacute;digo Onix, S.A. de C.V.<br /> OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA'; } ?></div>
     
 
 </body>

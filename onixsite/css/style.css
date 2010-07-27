@@ -59,7 +59,48 @@ body{
     float:right;
     position:relative;
     z-index:5;
+    margin-right:20px;
+}
+
+#langotggle{
+    display:block;
+    width:83px;
+    height:31px;
+    background:url(../images/lang_toggle.png) no-repeat;
+    text-indent:-9999px;
+    overflow:hidden;
+    float:right;
+    position:relative;
+    z-index:5;
     
+    
+}
+
+#contactbtn_no{
+    display:block;
+    width:83px;
+    height:31px;
+    float:right;
+    position:relative;
+    z-index:5;
+    margin-right:22px;
+    margin-top:7px;
+}
+
+#langotggle_no{
+    display:block;
+    width:83px;
+    height:31px;
+    float:right;
+    position:relative;
+    z-index:5;
+    margin-top:7px;
+    
+}
+
+.incontact{
+    margin-left:14px;
+    margin-top:5px;
 }
 
 #main{
@@ -300,7 +341,7 @@ body{
 }
 
 #sociallinks{
-    margin-left:83px;
+    margin-left:64px;
     margin-top:20px;
     float:left;
 }
@@ -348,6 +389,7 @@ body{
 
 .firstlink{
     margin-left:16px;
+    
 }
 
 #onixlink{
@@ -360,6 +402,11 @@ body{
 }
 
 #contactlink{
+    width:44px;
+    margin-left:16px;
+}
+
+#langlink{
     width:44px;
     margin-left:16px;
 }
@@ -455,11 +502,9 @@ object{
 
 #thanksBack{
     display:block;
-    width:136px;
-    height:13px;
-    text-indent:-9999px;
-    overflow:hidden;
-    background:url(../images/thanksBack.png) no-repeat;
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
     margin-left:150px;
     margin-top:120px;
 }
@@ -496,10 +541,35 @@ object{
 
 #inputLables{
     float:left;
-    width:76px;
-    height:231px;
-    background:url(../images/contactInputLables.png) no-repeat;
-    padding-right:27px;
+    width:86px;
+    font-size:14px;
+    font-weight:bold;
+    color:#fff;
+    padding-right:17px;
+}
+
+.labels{
+    padding-bottom:26px;
+}
+
+.labelssec{
+    padding-bottom:25px;
+}
+
+.labelsthir{
+    padding-bottom:24px;
+}
+
+.labelsfor{
+    padding-bottom:25px;
+}
+
+.labelsfi{
+    padding-bottom:22px;
+}
+
+.labelslast{
+    margin-top:14px;
 }
 
 #inputBoxes{
