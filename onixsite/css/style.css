@@ -38,7 +38,7 @@ body{
 }
 
 #head-menu{
-    width:691px;
+    width:688px;
     float:left;
     font-size:18px;
     margin-top:27px;
@@ -80,11 +80,17 @@ body{
     display:block;
     width:83px;
     height:31px;
+    line-height:31px;
     float:right;
     position:relative;
     z-index:5;
     margin-right:22px;
-    margin-top:7px;
+    margin-top:0px;
+    text-align:center;
+}
+
+.addhover:hover{
+    background:url(../images/hover.png) no-repeat;
 }
 
 #langotggle_no{
@@ -94,8 +100,9 @@ body{
     float:right;
     position:relative;
     z-index:5;
-    margin-top:7px;
-    
+    margin-top:0px;
+    line-height:31px;
+    text-align:center;
 }
 
 .incontact{

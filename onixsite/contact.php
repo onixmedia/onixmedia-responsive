@@ -21,8 +21,8 @@
                     <a href="index.php<? if($lang=="es"){echo '?lang=es';} ?>" id="img-logo">Onix Media, Frameworks for Digital Content</a>
                 </div>
                 <div id="head-menu">
-                    <a id="langotggle" href="index.php<? if($lang!="es"){echo '?lang=es';} ?>">Espa&ntilde;ol</a>
-                    <a id="contactbtn" href="contact.php<? if($lang=="es"){echo '?lang=es';} ?>">Contact</a>
+                    <a id="langotggle" class="addhover" href="index.php<? if($lang!="es"){echo '?lang=es';} ?>">Espa&ntilde;ol</a>
+                    <a id="contactbtn_no" class="addhover" href="contact.php<? if($lang=="es"){echo '?lang=es';} ?>">Contact<? if($lang=="es"){echo 'o';} ?></a>
                 </div>
             </div>
         </div>
