@@ -13,8 +13,10 @@
     }
     ?>
      <script language="JavaScript" src="js/jquery-1.4.2.min.js"></script>
+     <script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.1.pack.js"></script>
      <script language="JavaScript" src="js/jquery.tools.min.js"></script>
      <script language="JavaScript" src="js/engine.js"></script>
+     <link rel="stylesheet" href="./fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -87,14 +89,27 @@ More importantly: monetize your audience with integrated advertising!'; } ?></di
             <div id="slider" class="scrollable">
 
                    <div class="items">    
-                            <div class="slider-content item-8" width="415" height="104"><img src="images/carr_thumb.png" rel="13132694" class="videopopup" /></div>
-                            <div class="slider-content item-1" width="415" height="104"><img src="images/carr_thumb.png" rel="13132438" class="videopopup"/></div>
-                            <div class="slider-content item-2" width="415" height="104"><img src="images/carr_thumb.png" /></div>
-                            <div class="slider-content item-3" width="415" height="104"><img src="images/carr_thumb.png" /></div>
-                            <div class="slider-content item-4" width="415" height="104"><img src="images/carr_thumb.png" /></div>
-                            <div class="slider-content item-5" width="415" height="104"><img src="images/carr_thumb.png" /></div>
-                            <div class="slider-content item-6" width="415" height="104"><img src="images/carr_thumb.png" /></div>
-                            <div class="slider-content item-7" width="415" height="104"><img src="images/carr_thumb.png" /></div>
+                           <? if($lang=="es"){
+                            print <<<SPANISH
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen1.png" class="sliderimg" rel="g1" id="slide1">a</a><div class="slidehead" id="sh1"></div><div class="slidertxt">Un men&uacute; persistente le da al usuario acceso a contenidos especiales</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen2.png" class="sliderimg" rel="g1" id="slide2">a</a><div class="slidehead" id="sh2"></div><div class="slidertxt">Los men&uacute;s principales aparecen en las vistas horizontal y vertical </div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen3.png" class="sliderimg" rel="g1" id="slide3">a</a><div class="slidehead" id="sh3"></div><div class="slidertxt">Las galer&iacute;as de im&aacute;genes y videos se pueden acceder desde el artículo</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen4.png" class="sliderimg" rel="g1" id="slide4">a</a><div class="slidehead" id="sh4"></div><div class="slidertxt">El dise&ntilde;o organiza el contenido de manera pr&aacute;ctica y elegante</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen5.png" class="sliderimg" rel="g1" id="slide5">a</a><div class="slidehead" id="sh5"></div><div class="slidertxt">Es f&aacute;cil cambiar tama&ntilde;o del texto, compartirlo o agregar comentarios</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen6.png" class="sliderimg" rel="g1" id="slide6">a</a><div class="slidehead" id="sh6"></div><div class="slidertxt">Los art&iacute;culos se pueden compartir via Twitter, Facebook o email</div></div>
+SPANISH;
+                           }else{
+                            print <<<ENGLISH
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen1.png" class="sliderimg" rel="g1" id="slide1">a</a><div class="slidehead" id="sh1"></div><div class="slidertxt">Users get to key areas of content through a persistent menu</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen2.png" class="sliderimg" rel="g1" id="slide2">a</a><div class="slidehead" id="sh2"></div><div class="slidertxt">Menus are easy to find in either vertical and horizontal views</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen3.png" class="sliderimg" rel="g1" id="slide3">a</a><div class="slidehead" id="sh3"></div><div class="slidertxt">Image and video galleries are accessible from within a story</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen4.png" class="sliderimg" rel="g1" id="slide4">a</a><div class="slidehead" id="sh4"></div><div class="slidertxt">Layouts organize all types of content in a handsome, practial style</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen5.png" class="sliderimg" rel="g1" id="slide5">a</a><div class="slidehead" id="sh5"></div><div class="slidertxt">Users can change text size, share stories or read, add comments</div></div>
+                            <div class="slider-content" width="415" height="104"><a href="screens/screen6.png" class="sliderimg" rel="g1" id="slide6">a</a><div class="slidehead" id="sh6"></div><div class="slidertxt">Any story can be shared via Twitter, Facebook or email</div></div>
+ENGLISH;
+                            }
+                            ?>
+                            
                    </div>   
                     
             </div>
@@ -133,9 +148,6 @@ More importantly: monetize your audience with integrated advertising!'; } ?></di
     </div>
     <div id="closure"><? if($lang=="es"){echo '&copy;Copyright 2010 Derechos Reservados C&oacute;digo Onix, S.A. de C.V.<br />OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA';}else{ echo '&copy;Copyright 2010 C&oacute;digo Onix, S.A. de C.V.<br /> OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA'; } ?></div>
     
-    <div id="video-margin">
-        <div id="video-div"><div class="close cbutton">close</div></div>
-        <div class="close"></div>
-    </div>
+    
 </body>
 </html>
