@@ -19,7 +19,8 @@ $(document).ready(function(){
 		'transitionOut'	:	'elastic',
 		'speedIn'		:	600, 
 		'speedOut'		:	200,
-                'overlayOpacity'    :   0.7
+                'overlayOpacity'    :   0.7,
+                'overlayColor' :    '#000'
 	});
 
 
