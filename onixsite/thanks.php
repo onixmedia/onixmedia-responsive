@@ -64,12 +64,14 @@
       }
     }
     
-    $to = "mail@mail.com";
+    $to = "danilo@onixmedia.net";
     $subject = $fname .' '. $lname .' tried to contact you through Onix Media\'s contact form.';
-    $headers = 'From: onixcontact@onixmedia.com';
+    $headers = 'From: contact@onixmedia.net';
     $body = $fname ." ". $lname ." from ". $company ." tried to contact you through Onix Media's contact form '.$idioma.'. His contact information is the next: \n Name: ".$fname ." ". $lname ."\n\r Email: ".$email."\n\r Phone number: ".$phone."\n\r\n\r Together with his information he left the following message: \n\r ".$msg."\n\r".$interestsF."\n\r".$contactF;
 
-    mail($to, $subject, $body, $headers);
+    if(isset($_POST['first_name'])){
+        mail($to, $subject, $body, $headers);
+    }
     
 ?>
           <div id="container">

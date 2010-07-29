@@ -129,7 +129,7 @@ ENGLISH;
                     <div class="blankhead"><? if($lang=="es"){echo 'Siga nuestras noticias:';}else{ echo 'Follow us for news &amp; updates:'; } ?></div>
                     <div>
                         <a href="http://twitter.com/OnixMedia" id="twitter">Onix App on Twitter</a>
-                        <a href="#" id="fb">Onix App on Facebook</a>
+                        <a href="http://www.facebook.com/pages/Monterrey-Mexico/Onixmedia/141812745843242" id="fb">Onix App on Facebook</a>
                     </div>
                 </div>
                     
