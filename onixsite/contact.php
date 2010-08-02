@@ -12,6 +12,8 @@
         echo '<link type="text/css" rel="stylesheet" href="./css/style.css" />';
     }
     ?>
+    <script language="JavaScript" src="js/jquery-1.4.2.min.js"></script>
+    <script language="JavaScript" src="js/engine.js"></script>
 </head>
 <body class="contact">
         <div id="container">

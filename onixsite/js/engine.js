@@ -2,6 +2,13 @@
 
 $(document).ready(function(){
 
+var isiPad = navigator.userAgent.match(/iPad/i) != null;
+var isiPhone = navigator.userAgent.match(/iPhone/i) != null;
+
+if(isiPad || isiPhone){
+    $('#header-inner').css('width', '960px');
+    $('#head-menu').css('width', '600px');
+}
 
 
 
