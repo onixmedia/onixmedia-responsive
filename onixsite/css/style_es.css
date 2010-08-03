@@ -455,20 +455,31 @@ body{
     background:url(../images_es/footer.png) top center repeat-x;
 }
 
+#links-wrapp{
+    background:url(../images/links.png) no-repeat;
+    margin-left:20px;
+    position:relative;
+    top:15px;
+    width:384px;
+    height:20px;
+    line-height:20px;
+}
+
 .footlinks{
     display:block;
     text-indent:-9999px;
     overflow:hidden;
     float:left;
     height:20px;
-    margin-top:10px;
     line-height:20px;
     position:relative;
     z-index:5;
+    margin-left:0px;
+    text-align:left;
 }
 
 .firstlink{
-    margin-left:16px;
+    
 }
 
 #onixlink{
@@ -490,14 +501,6 @@ body{
     margin-left:16px;
 }
 
-#links{
-    position:relative;
-    top:15px;
-    background:url(../images_es/links.png) no-repeat;
-    margin-left:20px;
-    width:384px;
-    height:10px;
-}
 
 #video-div{
     width:550px;

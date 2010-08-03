@@ -138,11 +138,12 @@ ENGLISH;
                 
                 
             <div id="footer">
-                <a href="http://www.onixmedia.net/" id="onixlink" class="footlinks firstlink">onixmedia.net</a>
-                <a href="index.php<? if($lang=="es"){echo '?lang=es';} ?>" id="homelink" class="footlinks">Home</a>
-                <a href="contact.php<? if($lang=="es"){echo '?lang=es';} ?>" id="contactlink" class="footlinks">Contact</a>
-                <a href="index.php<? if($lang!="es"){echo '?lang=es';} ?>" id="langlink" class="footlinks">Espa&ntilde;ol</a>
-               <div id="links"> </div>
+                <div id="links-wrapp">
+                    <a href="http://www.onixmedia.net/" id="onixlink" class="footlinks firstlink">onixmedia.net</a>
+                    <a href="index.php<? if($lang=="es"){echo '?lang=es';} ?>" id="homelink" class="footlinks">Home</a>
+                    <a href="contact.php<? if($lang=="es"){echo '?lang=es';} ?>" id="contactlink" class="footlinks">Contact</a>
+                    <a href="index.php<? if($lang!="es"){echo '?lang=es';} ?>" id="langlink" class="footlinks">Espa&ntilde;ol</a>
+               </div>
             </div>
         </div>
     </div>
