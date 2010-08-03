@@ -146,7 +146,7 @@ ENGLISH;
             </div>
         </div>
     </div>
-    <div id="closure"><? if($lang=="es"){echo '&copy;Copyright 2010 Derechos Reservados C&oacute;digo Onix, S.A. de C.V.<br />OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA';}else{ echo '&copy;Copyright 2010 C&oacute;digo Onix, S.A. de C.V.<br /> OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA'; } ?></div>
+    <div id="closure"><? if($lang=="es"){echo '&copy;Copyright 2010 Derechos Reservados C&oacute;digo Onix, S.A. de C.V.<br />OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone&reg; are registered trademarks of Apple Computer, Inc. USA';}else{ echo '&copy;Copyright 2010 C&oacute;digo Onix, S.A. de C.V.<br /> OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA'; } ?></div>
     
     
 </body>

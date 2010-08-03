@@ -23,8 +23,8 @@
                     <a href="index.php<? if($lang=="es"){echo '?lang=es';} ?>" id="img-logo">Onix Media, Frameworks for Digital Content</a>
                 </div>
                 <div id="head-menu">
-                    <a id="langotggle" class="addhover" href="index.php<? if($lang!="es"){echo '?lang=es';} ?>">Espa&ntilde;ol</a>
-                    <a id="contactbtn_no" class="addhover" href="contact.php<? if($lang=="es"){echo '?lang=es';} ?>">Contact<? if($lang=="es"){echo 'o';} ?></a>
+                    <a id="langotggle_no" class="addhover" href="index.php<? if($lang!="es"){echo '?lang=es';} ?>">Espa&ntilde;ol</a>
+                    <a id="contactbtn_no" class="addhover active" href="contact.php<? if($lang=="es"){echo '?lang=es';} ?>">Contact<? if($lang=="es"){echo 'o';} ?></a>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@
         </div>
         
       </div>
-    <div id="closure"><? if($lang=="es"){echo '&copy;Copyright 2010 Derechos Reservados C&oacute;digo Onix, S.A. de C.V.<br />OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA';}else{ echo '&copy;Copyright 2010 C&oacute;digo Onix, S.A. de C.V.<br /> OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA'; } ?></div>
+    <div id="closure"><? if($lang=="es"){echo '&copy;Copyright 2010 Derechos Reservados C&oacute;digo Onix, S.A. de C.V.<br />OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone&reg; are registered trademarks of Apple Computer, Inc. USA';}else{ echo '&copy;Copyright 2010 C&oacute;digo Onix, S.A. de C.V.<br /> OnixMedia is a registred trademark of Codigo Onix S.A. de C.V., iPad&reg; and iPhone are registered trademarks of Apple Computer, Inc. USA'; } ?></div>
     
 
       
