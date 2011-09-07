@@ -1,4 +1,9 @@
-sites/default/settings.php
-sites/default/files
 backup
 .DS_Store
+
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
