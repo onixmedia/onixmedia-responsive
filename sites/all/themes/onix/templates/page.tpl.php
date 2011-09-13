@@ -123,6 +123,8 @@
 //echo "HERE";
 print views_embed_view('slideshow', 'block');
 print views_embed_view('solutions', 'block');
+print views_embed_view('projects', 'block');
+print views_embed_view('knowledge', 'block');
 ?> 
     
     
