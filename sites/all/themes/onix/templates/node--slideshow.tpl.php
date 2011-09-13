@@ -84,7 +84,10 @@
 <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
 <div>
-<?=$field_slideshow_image_rendered?>
+<?
+print_r($node);
+?>
 
 </div>
+
 </div><!-- /.node -->
