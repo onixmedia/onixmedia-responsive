@@ -141,8 +141,7 @@ function onix_preprocess_block(&$variables, $hook) {
 }
 // */
 
-function onix_preprocess_page(&$variables, $hook) 
-{
+function onix_preprocess_page(&$variables, $hook) {
 //print_r($variables);
   // Add per content type pages
   if (!empty($variables['node'])) {
@@ -159,4 +158,8 @@ function onix_preprocess_node(&$variables, $hook) {
   if (function_exists($function)) {
     $function($variables, $hook);
   }
+}
+
+function amex_preprocess_node_slideshow( &$variables, $hook ) {
+  
 }
