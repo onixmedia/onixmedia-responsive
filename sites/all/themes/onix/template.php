@@ -140,3 +140,23 @@ function onix_preprocess_block(&$variables, $hook) {
   $variables['classes_array'][] = 'count-' . $variables['block_id'];
 }
 // */
+
+function onix_preprocess_page(&$variables, $hook) 
+{
+//print_r($variables);
+  // Add per content type pages
+  if (!empty($variables['node'])) {
+    $variables['theme_hook_suggestions'][] = 'page__' . $variables['node']->type;
+  }
+}
+
+function onix_preprocess_node(&$variables, $hook) {
+  //$variables['sample_variable'] = t('Lorem ipsum.');
+
+  // Optionally, run node-type-specific preprocess functions, like
+  // onix_preprocess_node_page() or onix_preprocess_node_story().
+  $function = __FUNCTION__ . '_' . $variables['node']->type;
+  if (function_exists($function)) {
+    $function($variables, $hook);
+  }
+}
