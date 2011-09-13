@@ -85,7 +85,9 @@
 
 <div>
 <?
-print render($node->field_slideshow_image);
+
+print render($content['field_slideshow_image']);  
+//print render($node->field_slideshow_image);
 print_r($node);
 ?>
 
