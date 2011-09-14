@@ -8,6 +8,11 @@
   margin-bottom: 1.5em;
 }
 
+.front .region-content .block
+{
+  margin: 0;
+}
+
 .block.first /* The first block in the region */ {
 }
 
