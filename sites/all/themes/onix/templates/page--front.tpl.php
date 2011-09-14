@@ -140,11 +140,15 @@
 
       <div id="page-slideshow-solutions">   
       <?php print views_embed_view('slideshow'); ?>
+      
+      <a href="#solutions"></a>
       <?php print views_embed_view('solutions'); ?> 
       </div>
       
-      
+      <a href="#projects"></a>      
       <?php print views_embed_view('projects'); ?>
+
+      <a href="#knowledge"></a>      
       <?php print views_embed_view('knowledge'); ?>
                    
       
