@@ -74,6 +74,17 @@
 {
   overflow: hidden;
 }
+.plus
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url('../images/onix/plus.png') no-repeat center top;
+  width:38px;
+  height:38px;
+  text-indent: -99em;
+  overflow: hidden;
+}
 
 /* proyectos */
 
