@@ -11,7 +11,7 @@
 
 
 body {
-  background: url("../images/onix/bg.jpg") repeat-y scroll 0 0 transparent;
+  background: url("../images/onix/bg.jpg") repeat-y scroll center 0 #E1E3E2;
 }
 
 #page-wrapper {
