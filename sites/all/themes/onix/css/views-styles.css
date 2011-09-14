@@ -39,3 +39,21 @@
 {
   border-bottom: 2px dashed #999999
 }
+.view-solutions a
+{
+  text-decoration: none;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 1em;
+}
+.view-solutions p
+{
+  color: #d5d5d5;
+  font-size: 22px;
+  margin: 0;
+}
+.view-solutions .views-row
+{
+  overflow: hidden;
+}
