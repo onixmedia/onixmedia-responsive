@@ -40,9 +40,13 @@ body {
  * Header
  */
 #header {
+  height: 73px;
+  background: #333;
+  padding-top:  37px;
 }
 
 #header .section {
+
 }
 
 #logo /* Wrapping link for logo */ {
@@ -53,6 +57,10 @@ body {
 
 #logo img {
   vertical-align: bottom;
+}
+
+a#logo{
+  margin-left: 20px;
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {

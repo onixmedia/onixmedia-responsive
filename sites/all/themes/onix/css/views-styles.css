@@ -3,4 +3,10 @@
  * Views Styling
  */
 
+/* solutions views */
 
+.table-solutions table{
+  background: #f23312;
+  opacity:0.85;
+  filter:alpha(opacity=85);
+}
