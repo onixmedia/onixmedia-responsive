@@ -117,3 +117,8 @@ h2.block-title /* Block title */ {
   letter-spacing: 0;
   line-height: 1.2em;
 }
+
+#block-webform-client-block-15 .field-items { /* Contact Form */
+    float: right;
+    width: 200px;
+}

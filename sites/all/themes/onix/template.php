@@ -162,7 +162,3 @@ function onix_preprocess_node(&$variables, $hook) {
     $function($variables, $hook);
   }
 }
-
-function amex_preprocess_node_slideshow( &$variables, $hook ) {
-  
-}
