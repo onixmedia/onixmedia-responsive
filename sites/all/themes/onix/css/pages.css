@@ -11,6 +11,15 @@
 {
   font-family: "Franklin ITC Pro", Helvetica, sans-serif;
 }
+a:active
+{
+  outline: none;
+}
+
+a:focus
+{
+  -moz-outline-style: none;
+}
 
 /*
  * Body

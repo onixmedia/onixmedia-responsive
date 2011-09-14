@@ -111,10 +111,12 @@
   font-weight: normal;
   color: #666666;
   margin: 0;
-}
-.view-projects h3 span
-{
-  display:block;
   text-transform: uppercase;
   text-shadow: #ffffff 1px 1px 0;
+}
+.view-projects h3 .type
+{
+  display:block;
+  font-family: "Georgia", serif;
+  font-style: italic;
 }
