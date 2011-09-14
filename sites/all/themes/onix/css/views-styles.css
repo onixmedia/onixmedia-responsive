@@ -8,6 +8,21 @@
    display: block;
  }
 
+.view-slideshow h1.balloon
+{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 75px 65px;
+  width: 287px;
+  height: 267px;
+  text-transform:uppercase;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 50px;
+  background: url('../images/onix/balloon.png') no-repeat center top;
+}
+
 /* solutions views */
 
 .view-solutions .views-row
