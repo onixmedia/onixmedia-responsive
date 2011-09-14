@@ -10,7 +10,7 @@
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
       var map = new google.maps.Map(document.getElementById("mapa_onix"), myOptions);
-      var contentString = '<div class="infowindow"><b>OnixMedia</b> <br/>Matamoros 1528 Ote. Col. Obispado, Monterrey Nuevo Leon <br/>+(52) 8180135723 </div>';
+      var contentString = '<div class="infowindow"><b>OnixMedia</b> <br/>Matamoros 1528 Ote.<br/>Col. Obispado,<br/>Monterrey<br/>Nuevo Le&oacute;n <br/>+(52) 818 123-2713 </div>';
       var infowindow = new google.maps.InfoWindow({
           content: contentString
       });
@@ -23,6 +23,12 @@
         infowindow.open(map,marker);
       });       
       //$("#mapa_onix").attr("position", "absolute");
+    }
+  };
+  
+  Drupal.behaviors.proyectos = {
+    attach: function(context) {
+      $('.view-projects .view-content').accordion();
     }
   };
 
