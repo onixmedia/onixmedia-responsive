@@ -141,14 +141,14 @@
       <div id="page-slideshow-solutions">   
       <?php print views_embed_view('slideshow'); ?>
       
-      <a href="#solutions"></a>
+      <a name="solutions"></a>
       <?php print views_embed_view('solutions'); ?> 
       </div>
       
-      <a href="#projects"></a>      
+      <a name="projects"></a>      
       <?php print views_embed_view('projects'); ?>
 
-      <a href="#knowledge"></a>      
+      <a name="knowledge"></a>      
       <?php print views_embed_view('knowledge'); ?>
                    
       
