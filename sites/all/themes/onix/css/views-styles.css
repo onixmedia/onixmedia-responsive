@@ -74,3 +74,47 @@
 {
   overflow: hidden;
 }
+
+/* proyectos */
+
+#block-views-projects-block
+{
+  margin-top: 25px;
+}
+#block-views-projects-block h2
+{
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #999999;
+  font-size: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.view-projects .view-header
+{
+  padding: 0 10px;
+}
+.view-projects .view-header p
+{
+  margin: 0;
+  font-size: 26px;
+  line-height: 1.1em;
+  color: #E54C30;
+}
+.view-projects h3
+{
+  border-bottom: 2px dashed #999999;
+  height: 75px;
+  text-align: center;
+  padding-top: 30px;
+  font-weight: normal;
+  color: #666666;
+  margin: 0;
+}
+.view-projects h3 span
+{
+  display:block;
+  text-transform: uppercase;
+  text-shadow: #ffffff 1px 1px 0;
+}
