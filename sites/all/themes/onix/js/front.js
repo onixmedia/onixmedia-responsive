@@ -23,6 +23,7 @@
         infowindow.open(map,marker);
       });       
       $("#mapa_onix").attr("position", "absolute");
+      $("#mapa_onix").attr("height", "321px");
     }
   };
 
