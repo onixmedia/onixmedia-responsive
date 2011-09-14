@@ -114,6 +114,11 @@ body {
 
 }
 
+.front #content
+{
+  position:relative;
+}
+
 #navigation .section {
 }
 
