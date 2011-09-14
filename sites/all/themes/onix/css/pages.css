@@ -7,6 +7,10 @@
  * ul.links, .pager, .more-link, etc.
  */
 
+*
+{
+  font-family: "Franklin ITC Pro", Helvetica, sans-serif;
+}
 
 /*
  * Body
