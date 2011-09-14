@@ -117,6 +117,7 @@
   <div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu || $page['navigation']) { print ' with-navigation'; } ?>">
 
     <div id="content" class="column"><div class="section">
+<?php /*
 
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>
@@ -134,9 +135,10 @@
       <?php if ($action_links): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
-      
-      
       <?php print render($page['content']); ?>
+*/ ?>      
+      
+      
 
       <div id="page-slideshow-solutions">   
       <?php print views_embed_view('slideshow'); ?>
