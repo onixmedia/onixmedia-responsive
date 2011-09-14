@@ -22,8 +22,7 @@
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map,marker);
       });       
-      $("#mapa_onix").attr("position", "relative");
-      //$("#mapa_onix").attr("height", "321px");
+      //$("#mapa_onix").attr("position", "absolute");
     }
   };
 
