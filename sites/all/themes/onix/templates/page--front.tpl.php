@@ -139,13 +139,13 @@
       <?php print render($page['content']); ?>
 
       <div id="page-slideshow-solutions">   
-      <?php print views_embed_view('slideshow', 'block'); ?>
-      <?php print views_embed_view('solutions', 'block'); ?> 
+      <?php print views_embed_view('slideshow'); ?>
+      <?php print views_embed_view('solutions'); ?> 
       </div>
       
       
-      <?php print views_embed_view('projects', 'block'); ?>
-      <?php print views_embed_view('knowledge', 'block'); ?>
+      <?php print views_embed_view('projects'); ?>
+      <?php print views_embed_view('knowledge'); ?>
                    
       
       <?php print $feed_icons; ?>
