@@ -71,7 +71,7 @@
 
 <div id="page-wrapper"><div id="page">
 
-  <div id="header"><div class="section clearfix">
+  <div id="header"><div class="header-content"><div class="section clearfix">
 
     <?php if ($logo): ?>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
@@ -100,7 +100,7 @@
 
     <?php print render($page['header']); ?>
 
-  </div></div><!-- /.section, /#header -->
+  </div></div></div><!-- /.section, /.header-content, /#header -->
 
   <div id="main-wrapper"><div id="main" class="clearfix<?php if ($main_menu || $page['navigation']) { print ' with-navigation'; } ?>">
 

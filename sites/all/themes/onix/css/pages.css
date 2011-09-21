@@ -53,9 +53,16 @@ body {
  * Header
  */
 #header {
+  height: 110px;
+} 
+ 
+.header-content {
   height: 73px;
   background: #333;
   padding-top:  37px;
+  position: fixed;
+  z-index: 1;
+  width: 960px;
 }
 
 #header .section {
