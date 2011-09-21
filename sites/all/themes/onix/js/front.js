@@ -28,7 +28,8 @@
   
   Drupal.behaviors.scrolling = {
     attach: function(context) {
-  		$('a[href*=#]').click(function() {
+  		$('a[href*=#]').click(function(event) {
+        event.preventDefault();
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
         && location.hostname == this.hostname) {
           var $target = $(this.hash);
