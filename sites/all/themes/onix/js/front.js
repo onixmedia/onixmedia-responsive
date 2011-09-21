@@ -26,6 +26,24 @@
     }
   };
   
+  Drupal.behaviors.scrolling = {
+    attach: function(context) {
+  		$('a[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        && location.hostname == this.hostname) {
+          var $target = $(this.hash);
+          $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']'); 
+          if ($target.length) {
+            var targetOffset = $target.offset().top - 110;
+            //console.log("offset: "+targetOffset);
+            $('html,body').animate({scrollTop: targetOffset}, 1000);
+            return false;
+          }
+        }
+      });
+    }
+  };  
+  
   Drupal.behaviors.proyectos = {
     attach: function(context) {
       $('.view-projects .view-content').accordion();
