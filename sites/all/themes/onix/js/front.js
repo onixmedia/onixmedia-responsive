@@ -58,7 +58,8 @@
   
   Drupal.behaviors.proyectos = {
     attach: function(context) {
-      $('.view-projects .view-content').accordion();
+      //$('.view-projects .view-content').accordion();
+      $( "#block-views-projects-block .view-content" ).accordion();      
     }
   };
   
