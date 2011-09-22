@@ -136,7 +136,7 @@ h2.block-title /* Block title */ {
   font-weight: normal;  
 }
 
-#block-webform-client-block-15 .field-items p .title{ /* Contact Form */
+#block-webform-client-block-15 .field-items p.contact-title{ /* Contact Form */
   color: #666;
   font-weight: bold;
   font-size: 0.9em;
