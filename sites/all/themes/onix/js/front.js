@@ -67,4 +67,11 @@
     }
   }
   
+  Drupal.behaviors.slideshow = {
+    attach: function (context)
+    {
+      $('.view-slideshow').scrollable();
+    }
+  }
+  
 }(jQuery));

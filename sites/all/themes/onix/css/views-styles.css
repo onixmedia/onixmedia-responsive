@@ -25,6 +25,18 @@
       margin: 0;
       color: #999999;
 }
+
+.view-slideshow
+{
+  position: relative;
+  overflow: hidden;
+}
+
+#block-views-slideshow-block .views-row
+{
+  position: relative;
+}
+
 #block-views-slideshow-block
 {
   border-bottom: 2px dashed #999999;

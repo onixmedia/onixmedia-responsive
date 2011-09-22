@@ -94,6 +94,7 @@ function onix_preprocess_page(&$variables, $hook)
   {
     drupal_add_js('http://maps.google.com/maps/api/js?sensor=false', array('type'=>'external'));
     drupal_add_js(drupal_get_path('theme', 'onix') .'/js/front.js', 'file');
+    drupal_add_js(drupal_get_path('theme', 'onix') .'/js/scrollable.js', 'file');
     jquery_ui_add('ui.accordion');
   }
 }
