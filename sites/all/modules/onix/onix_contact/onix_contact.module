@@ -10,6 +10,9 @@
 function onix_contact_form_alter(&$form, &$form_state, $form_id) {
   // see if webform_client_form_ is in the form_id
   if(strstr($form_id, 'webform_client_form_')) {
+  
+//print_r($form);
+  
     // get the nid so we can use it in the wrapper value
     $nid = $form['#node']->nid;
     // add the ajax properties to the submit button

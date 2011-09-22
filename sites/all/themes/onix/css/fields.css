@@ -76,3 +76,9 @@
 
 .field-name-field-FIELDNAME /* Underscores in field name are replaced with dashes. */ {
 }
+
+#block-webform-client-block-15 .field field-name-body {
+  text-align: right;
+}
+
+

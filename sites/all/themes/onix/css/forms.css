@@ -123,3 +123,56 @@ form tr.even {
 form table .item-list ul {
   margin: 0;
 }
+
+#webform-client-form-15 {
+  margin-left: 100px;
+  width: 400px;
+}
+#webform-client-form-15 .form-textarea-wrapper textarea {
+  width: 300px;
+  -moz-box-shadow: -1px -1px 1px #888;
+  -webkit-box-shadow: -1px -1px 1px #888;
+  box-shadow: -1px -1px 1px #888;
+  border-color: #fff; 
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#webform-client-form-15 .webform-component input {
+  width: 300px;
+  -moz-box-shadow: -1px -1px 1px #888;
+  -webkit-box-shadow: -1px -1px 1px #888;
+  box-shadow: -1px -1px 1px #888;
+  border-color: #fff; 
+  -moz-border-radius: 10px;
+  border-radius: 10px;  
+}
+
+#webform-client-form-15 .form-submit {
+  float: right;
+  width: 80px;
+  height: 35px;
+  margin: 0;
+  background: url("../images/onix/form_submit.png") no-repeat scroll 0 0 transparent;
+  border: 0px;
+  color: #fff;
+}
+
+#webform-client-form-15 .webform-component {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  height: 30px;
+}
+
+#block-webform-client-block-15 #webform-component-message {
+  height: 150px;
+}
+
+#webform-client-form-15 .form-item label {
+    float: left;
+    margin: 0;
+    width: 80px;
+    text-transform: uppercase;
+    color: #aaa;
+    font-weight: normal;
+}
