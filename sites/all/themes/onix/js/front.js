@@ -2,8 +2,7 @@
 
   Drupal.behaviors.googlemap  = {
     attach: function(context) {
-     var latlng = new google.maps.LatLng(25.6736,-100.337727);
-
+      var latlng = new google.maps.LatLng(25.6736,-100.337727);
       var myOptions = {
         zoom: 13,
         center: latlng,
@@ -21,8 +20,7 @@
       });
       google.maps.event.addListener(marker, 'click', function() {
         infowindow.open(map,marker);
-      });       
-      //$("#mapa_onix").attr("position", "absolute");
+      });
     }
   };
   
@@ -36,12 +34,25 @@
           $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']'); 
           if ($target.length) {
             var targetOffset = $target.offset().top - 110;
-            //console.log("offset: "+targetOffset);
             $('html,body').animate({scrollTop: targetOffset}, 1000);
             return false;
           }
         }
       });
+      
+      $(window).scroll(function () { 
+        var scrollTop = $(window).scrollTop();
+        if(scrollTop < 109){
+            $('.header-content').css('height', 73);
+            $('.header-content').css('padding-top', 37);
+
+        }else{
+          $('.header-content').css('height', 38);
+          $('.header-content').css('padding-top', 17);        
+        }
+        //console.log("scrolltop: "+scrollTop);
+      });
+
     }
   };  
   
@@ -50,5 +61,5 @@
       $('.view-projects .view-content').accordion();
     }
   };
-
+  
 }(jQuery));
