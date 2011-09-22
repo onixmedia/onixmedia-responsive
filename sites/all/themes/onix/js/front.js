@@ -43,12 +43,9 @@
       $(window).scroll(function () { 
         var scrollTop = $(window).scrollTop();
         if(scrollTop < 109){
-            $('.header-content').css('height', 73);
-            $('.header-content').css('padding-top', 37);
-
+            $('.header-content').removeClass('floating');
         }else{
-          $('.header-content').css('height', 38);
-          $('.header-content').css('padding-top', 17);        
+          $('.header-content').addClass('floating');       
         }
         //console.log("scrolltop: "+scrollTop);
       });
@@ -62,5 +59,12 @@
       $( "#block-views-projects-block .view-content" ).accordion();      
     }
   };
+  
+  Drupal.behaviors.solutions = {
+    attach: function (context)
+    {
+      $('#block-views-solutions-block').appendTo('#block-views-slideshow-block');
+    }
+  }
   
 }(jQuery));

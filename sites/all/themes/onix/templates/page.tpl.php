@@ -86,11 +86,6 @@
             'id' => 'main-menu',
             'class' => array('links', 'inline', 'clearfix'),
           ),
-          'heading' => array(
-            'text' => t('Main menu'),
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
         )); ?>
 
         <?php print render($page['navigation']); ?>

@@ -60,9 +60,6 @@ body {
   height: 73px;
   background: #333;
   padding-top:  37px;
-  position: fixed;
-  z-index: 1;
-  width: 960px;
 }
 
 #header .section {
@@ -93,7 +90,11 @@ div#site-name /* The name of the website */ {
   font-size: 2em;
   line-height: 1.5em;
 }
-
+.floating
+{
+  height: 45px !important;
+  padding-top: 10px !important;
+}
 #site-name a:link,
 #site-name a:visited {
   color: #000;
