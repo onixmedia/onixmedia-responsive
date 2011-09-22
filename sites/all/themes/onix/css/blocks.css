@@ -118,7 +118,28 @@ h2.block-title /* Block title */ {
   line-height: 1.2em;
 }
 
+#block-webform-client-block-15 { /* Contact Form */
+  margin-top: 20px;
+  background: url("../images/onix/qmark_960.png") no-repeat scroll 10px 0 transparent;
+}
+
 #block-webform-client-block-15 .field-items { /* Contact Form */
     float: right;
-    width: 200px;
+    /*width: 200px;*/
+    text-align: right;
+    margin-right: 10px;
 }
+
+#block-webform-client-block-15 .field-items p{ /* Contact Form */
+  margin: 0px;
+  color: #aaa;
+  font-weight: normal;  
+}
+
+#block-webform-client-block-15 .field-items p .title{ /* Contact Form */
+  color: #666;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+
