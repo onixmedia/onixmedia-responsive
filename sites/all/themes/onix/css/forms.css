@@ -127,25 +127,38 @@ form table .item-list ul {
 #webform-client-form-15 {
   margin-left: 100px;
   width: 400px;
+  padding-top: 20px;
 }
-#webform-client-form-15 .form-textarea-wrapper textarea {
+#webform-client-form-15 .grippie
+{
+  display: none;
+}
+#webform-client-form-15 .form-textarea-wrapper textarea 
+{
   width: 300px;
-  -moz-box-shadow: -1px -1px 1px #888;
-  -webkit-box-shadow: -1px -1px 1px #888;
-  box-shadow: -1px -1px 1px #888;
-  border-color: #fff; 
+  -moz-box-shadow: 1px 1px 3px #999999 inset;
+  -webkit-box-shadow: 1px 1px 3px #999999 inset;
+  box-shadow: 1px 1px 3px #999999 inset;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  border: none;
+  padding: 5px;
+}
+
+.node-webform .form-required
+{
+  display: none;
 }
 
 #webform-client-form-15 .webform-component input {
-  width: 300px;
-  -moz-box-shadow: -1px -1px 1px #888;
-  -webkit-box-shadow: -1px -1px 1px #888;
-  box-shadow: -1px -1px 1px #888;
-  border-color: #fff; 
+  width: 290px;
+  -moz-box-shadow: 1px 1px 3px #999999 inset;
+  -webkit-box-shadow: 1px 1px 3px #999999 inset;
+  box-shadow: 1px 1px 3px #999999 inset;
   -moz-border-radius: 10px;
   border-radius: 10px;  
+  border: none;
+  padding: 5px;
 }
 
 #webform-client-form-15 .form-submit {
@@ -158,7 +171,8 @@ form table .item-list ul {
   color: #fff;
 }
 
-#webform-client-form-15 .webform-component {
+#webform-client-form-15 .webform-component 
+{
   margin-top: 0px;
   margin-bottom: 10px;
   height: 30px;
@@ -175,4 +189,5 @@ form table .item-list ul {
     text-transform: uppercase;
     color: #aaa;
     font-weight: normal;
+    font-size: 16px;
 }
