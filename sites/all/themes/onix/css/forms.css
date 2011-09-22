@@ -138,7 +138,7 @@ form table .item-list ul {
   border-radius: 10px;
 }
 
-#webform-client-form-15 input {
+#webform-client-form-15 .webform-component input {
   width: 300px;
   -moz-box-shadow: -1px -1px 1px #888;
   -webkit-box-shadow: -1px -1px 1px #888;
