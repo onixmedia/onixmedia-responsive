@@ -54,8 +54,10 @@
   };  
   
   Drupal.behaviors.proyectos = {
-    attach: function(context) {
-      //$('.view-projects .view-content').accordion();
+    attach: function(context) 
+    {
+      $('.view-projects h3:last').addClass('last');
+      $('.view-projects .proyectos-tab:last').addClass('last');
       $( "#block-views-projects-block .view-content" ).accordion();      
     }
   };
@@ -64,13 +66,52 @@
     attach: function (context)
     {
       $('#block-views-solutions-block').appendTo('#block-views-slideshow-block');
+      $('.view-solutions .attachment').hide();
+      
+      // scrollable
+      $('.view-solutions .attachment .view-header').prependTo('.view-solutions .attachment');
+      $('.view-solutions .attachment').before('<a class="s-prev">prev</a><a class="s-next">next</a>');
+      $('.view-solutions .attachment .view-solutions').scrollable({ prev: '.s-prev', next: '.s-next' });
+      
+      $('.view-solutions .plus').click(function()
+      {
+        $('.view-solutions:first > .view-content').hide();
+        $('.view-solutions .attachment').show();
+      });
+      
+      $('.view-solutions .close').click(function()
+      {
+        $('.view-solutions:first > .view-content').show();
+        $('.view-solutions .attachment').hide();
+      });
     }
   }
   
+  /**
+   * Upper stage slideshow
+   */
   Drupal.behaviors.slideshow = {
     attach: function (context)
     {
-      $('.view-slideshow').scrollable();
+      $('#block-views-solutions-block > .content').prepend('<div class="navi clearfix"></div>');
+      $('.view-slideshow').scrollable({ circular: true }).autoscroll({ interval: 5000 }).navigator();
+    }
+  }
+  
+  /**
+   * Capacidades slideshow
+   */
+  Drupal.behaviors.knowledge = {
+    attach: function (context)
+    {
+      $('.view-knowledge').before('<div class="knowledge-nav clearfix"></div>');
+      $('.view-knowledge h3').each(function(i)
+      {
+        $('.knowledge-nav').append('<a href="#'+i+'">'+$(this).html()+'</a>');
+        $(this).remove();
+      });
+      $('.knowledge-nav a:first').addClass('active');
+      $('.view-knowledge').scrollable().navigator({ navi: '.knowledge-nav' });
     }
   }
   

@@ -13,6 +13,14 @@
   margin: 0;
 }
 
+#block-block-1 
+{
+    border-bottom: 2px dashed #CCCCCC;
+    border-top: 2px dashed #999999;
+    margin: 25px 0;
+    padding: 25px 0;
+}
+
 .block.first /* The first block in the region */ {
 }
 

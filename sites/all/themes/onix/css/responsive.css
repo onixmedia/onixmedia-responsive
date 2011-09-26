@@ -26,9 +26,27 @@
     width: 33.33333%;
     height: 290px;
   }
+  .view-solutions .attachment .view-solutions,
+  .view-solutions .attachment .views-row
+  {
+    width: 1225px;
+    height: 582px;
+  }
   #block-views-solutions-block
   {
     top: 520px;
+  }
+  .view-slideshow,
+  .view-slideshow .views-row
+  {
+    width: 1225px;
+    height: 1155px;
+  }
+  .view-knowledge,
+  .view-knowledge .views-row
+  {
+    width: 1225px;
+    height: 550px;
   }
 }
 
