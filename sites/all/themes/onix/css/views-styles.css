@@ -336,11 +336,11 @@
 }
 .knowledge-nav a
 {
-  background-color: #E74E30;
+  background-color: #666666;
       border-radius: 18px 18px 18px 18px;
       -moz-border-radius: 18px 18px 18px 18px;
       -webkit-border-radius: 18px 18px 18px 18px;
-      color: white;
+      color: #333333;
       display: block;
       float: left;
       height: 36px;
@@ -353,8 +353,8 @@
 }
 .knowledge-nav a.active
 {
-  background-color: #666666;
-  color: #333333;
+  background-color: #E74E30;
+  color: white;  
 }
 .view-knowledge .body p
 {
