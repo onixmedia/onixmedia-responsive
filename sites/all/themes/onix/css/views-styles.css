@@ -114,7 +114,6 @@
   color: #d5d5d5;
   font-size: 22px;
   margin: 0;
-  font-family: "Rockwell", Helvetica, sans-serif !important;
   line-height: 1.05em;
 }
 .view-solutions .views-row
@@ -212,13 +211,13 @@
 }
 .view-projects .proyectos-tab *
 {
-  font-family: "Rockwell", Helvetica, sans-serif !important;
+  font-family: ApresRe, "Helvetica Neue",Helvetica,sans-serif !important;
 }
 .view-projects .subtitle
 {
   background: url("../images/onix/balloon_proj.png") no-repeat scroll left top transparent;
       float: left;
-      font-family: "Franklin ITC Pro",Helvetica,sans-serif !important;
+      font-family: ApresRe, "Helvetica Neue",Helvetica,sans-serif !important;
       font-size: 20px;
       height: 79px;
       line-height: 18px;
@@ -268,7 +267,6 @@
   font-size: 26px;
   line-height: 1.1em;
   color: #E54C30;
-  font-family: "Rockwell",Helvetica !important;
 }
 .view-projects h3
 {
@@ -359,7 +357,6 @@
 .view-knowledge .body p
 {
   margin: 10px 20px;
-  font-family: "Rockwell",Helvetica !important;
   font-size: 26px;
   line-height: 26px;
 }
