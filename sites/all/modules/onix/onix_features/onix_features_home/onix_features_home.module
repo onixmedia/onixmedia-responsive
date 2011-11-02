@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Home feature.
+ */
+
+include_once('onix_features_home.features.inc');
