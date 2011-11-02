@@ -49,6 +49,11 @@ body {
   color: #fff;
 }
 
+.front h1
+{
+  display: none;
+}
+
 /*
  * Header
  */
@@ -60,6 +65,7 @@ body {
   height: 73px;
   background: #333;
   padding-top:  37px;
+  z-index: 99;
 }
 
 #header .section {

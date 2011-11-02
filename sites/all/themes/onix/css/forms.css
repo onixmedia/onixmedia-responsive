@@ -169,6 +169,8 @@ form table .item-list ul {
   background: url("../images/onix/form_submit.png") no-repeat scroll 0 0 transparent;
   border: 0px;
   color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
 }
 
 #webform-client-form-15 .webform-component 

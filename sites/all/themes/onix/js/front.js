@@ -1,3 +1,6 @@
+var scrollWindowTo;
+var scrollWindowToElement;
+
 (function ($) {
 
   Drupal.behaviors.googlemap  = {
@@ -33,23 +36,23 @@
           var $target = $(this.hash);
           $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']'); 
           if ($target.length) {
-            var targetOffset = $target.offset().top - 110;
-            $('html,body').animate({scrollTop: targetOffset}, 1000);
+            scrollWindowTo($target.offset().top);
             return false;
           }
         }
       });
       
-      $(window).scroll(function () { 
-        var scrollTop = $(window).scrollTop();
-        if(scrollTop < 109){
-            $('.header-content').removeClass('floating');
-        }else{
-          $('.header-content').addClass('floating');       
-        }
-        //console.log("scrolltop: "+scrollTop);
-      });
-
+      if ( !Drupal.settings.onix.mobile )
+      {
+        $(window).scroll(function () { 
+          var scrollTop = $(window).scrollTop();
+          if(scrollTop < 109){
+              $('.header-content').removeClass('floating');
+          }else{
+            $('.header-content').addClass('floating');       
+          }
+        });
+      }
     }
   };  
   
@@ -58,7 +61,10 @@
     {
       $('.view-projects h3:last').addClass('last');
       $('.view-projects .proyectos-tab:last').addClass('last');
-      $( "#block-views-projects-block .view-content" ).accordion();      
+      Drupal.settings.onix.accordion = $( "#block-views-projects-block .view-content" ).accordion({ autoHeight: false });
+      $( "#block-views-projects-block .view-content" ).bind('accordionchange', function(event, ui) {
+        scrollWindowToElement($(ui.newHeader));
+      });
     }
   };
   
@@ -68,21 +74,40 @@
       $('#block-views-solutions-block').appendTo('#block-views-slideshow-block');
       $('.view-solutions .attachment').hide();
       
+      //
       // scrollable
+      //
       $('.view-solutions .attachment .view-header').prependTo('.view-solutions .attachment');
-      $('.view-solutions .attachment').before('<a class="s-prev">prev</a><a class="s-next">next</a>');
+      $('.view-solutions .attachment').before('<a class="s-prev">&nbsp;</a><a class="s-next">&nbsp;</a>');
       $('.view-solutions .attachment .view-solutions').scrollable({ prev: '.s-prev', next: '.s-next' });
+      Drupal.settings.onix.solutions = $('.view-solutions .attachment .view-solutions').data('scrollable');
+      $('.s-prev, .s-next').hide();
       
+      //
+      // open
+      //
       $('.view-solutions .plus').click(function()
       {
+        $('#block-views-slideshow-block').addClass('expanded');
         $('.view-solutions:first > .view-content').hide();
-        $('.view-solutions .attachment').show();
+        $('.view-solutions .attachment, .s-prev, .s-next').show();
+        Drupal.settings.onix.solutions.seekTo($('.view-solutions .plus').index(this));
+        
+        // scroll a elemento
+        Drupal.settings.onix.scrolltop = $(window).scrollTop();
+        scrollWindowToElement('.view-solutions');
       });
       
+      //
+      // close
+      //
       $('.view-solutions .close').click(function()
       {
+        $('#block-views-slideshow-block').removeClass('expanded');
         $('.view-solutions:first > .view-content').show();
-        $('.view-solutions .attachment').hide();
+        $('.view-solutions .attachment, .s-prev, .s-next').hide();
+        
+        scrollWindowTo(Drupal.settings.onix.scrolltop);
       });
     }
   }
@@ -95,6 +120,7 @@
     {
       $('#block-views-solutions-block > .content').prepend('<div class="navi clearfix"></div>');
       $('.view-slideshow').scrollable({ circular: true }).autoscroll({ interval: 5000 }).navigator();
+      Drupal.settings.onix.slideshow = $('.view-slideshow').data('scrollable');
     }
   }
   
@@ -112,7 +138,39 @@
       });
       $('.knowledge-nav a:first').addClass('active');
       $('.view-knowledge').scrollable().navigator({ navi: '.knowledge-nav' });
+      Drupal.settings.onix.knowledge = $('.view-knowledge').data('scrollable');
     }
   }
+  
+  /**
+   * Responsiveness, reset scrollable and accordion state
+   */
+  Drupal.behaviors.responsive = {
+    attach: function (context)
+    {
+      $(window).resize(function()
+      {
+        //Drupal.settings.onix.accordion.accordion('activate', 0);
+        //Drupal.settings.onix.slideshow.seekTo(0);
+        //Drupal.settings.onix.solutions.seekTo(0);
+        //Drupal.settings.onix.knowledge.seekTo(0);
+      });
+    }
+  }
+  
+  /**
+   ** Funciones para mover al usuario en scroll vertical
+   **/
+  scrollWindowTo = function (yPos)
+  {
+    var delta = (Drupal.settings.onix.mobile) ? 0 : 110;
+    var targetOffset = yPos - delta;
+
+    $('html,body').animate({scrollTop: targetOffset}, 1000);
+  };
+  scrollWindowToElement = function (name)
+  {
+    scrollWindowTo( $(name).offset().top );
+  };
   
 }(jQuery));

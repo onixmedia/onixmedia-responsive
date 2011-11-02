@@ -13,13 +13,14 @@
 
 @media screen and (min-width: 960px)
 {
-  .header-content
-  {
-    margin: 0;
-  }
   #main-wrapper
   {
     margin: 0 30px;
+  }
+  #page-wrapper, 
+  .region-bottom
+  {
+    width: 1285px;
   }
   .view-solutions .views-row
   {
@@ -31,6 +32,11 @@
   {
     width: 1225px;
     height: 582px;
+  }
+  .view-solutions .s-prev,
+  .view-solutions .s-next
+  {
+    top: 275px;
   }
   #block-views-solutions-block
   {
@@ -60,6 +66,11 @@
   {
     margin: 0 30px;
   }
+  #page-wrapper, 
+  .region-bottom
+  {
+    width: 900px;
+  }
   #block-views-solutions-block
   {
     top: 460px;
@@ -80,14 +91,24 @@
 }
 
 /**
- ** 752
+ ** 752 / iPad
  **/
 
-@media screen and (min-width: 370px) and (max-width: 752px)
+@media 
+screen and (min-width: 370px) and (max-width: 752px) and (min-device-width: 481px)
 {
   .header-content
   {
     position: static;
+  }
+  #main-wrapper
+  {
+    margin: 0 !important;
+  }
+  #page-wrapper, 
+  .region-bottom
+  {
+    width: 752px;
   }
   .view-solutions .views-row
   {
@@ -102,24 +123,248 @@
   {
     height: 1345px;
   }
+  
+  /* slideshow */
+  .view-slideshow img
+  {
+    max-width: 752px !important;
+  }
+  .view-slideshow,
+  .view-slideshow .views-row
+  {
+    width: 752px;
+    height: 1345px;
+  }
+  
+  /* solutions */
+  .view-solutions .attachment .view-solutions,
+  .view-solutions .attachment .views-row
+  {
+    width: 752px;
+    height: 858px;
+  }
+  .view-solutions .s-prev,
+  .view-solutions .s-next
+  {
+    top: 430px;
+  }
+  
+  /* projects */
+  #block-views-projects-block
+  {
+    overflow: hidden;
+  }
+  .view-projects h3.ui-state-active
+  {
+    background-position: 250px -44px;
+  }
+  .view-projects h3
+  {
+    background-position: 250px 44px;
+  }
+  /*.view-projects .images
+  {
+    width: 330px;
+    height: 535px;
+    overflow: hidden;
+  }
+  .view-projects .images img
+  {
+    max-width: 330px;
+  }*/
+  .view-projects .proyectos-tab
+  {
+    padding: 10px;
+  }
+  /*.view-projects .body
+  {
+    float: right;
+    width: 200px;
+  }*/
+  
+  /* knowledge */
+  .view-knowledge,
+  .view-knowledge .views-row
+  {
+    width: 752px;
+    height: 600px;
+  }
+  /*.knowledge-nav
+  {
+    position: static;
+  }*/
+  #block-views-knowledge-block h2
+  {
+    font-size: 54px;
+  }
 }
 
 /**
- ** 370
+ ** 370 / iPhone
  **/
 
-@media screen and (max-width: 370px)
+@media 
+screen and (max-width: 370px),
+screen and (device-width: 320px),
+screen and (device-width: 480px)
 {
+  #main-wrapper
+  {
+    margin: 0 !important;
+  }
+  
+  /* slideshow */
+  .view-slideshow img
+  {
+    max-width: 370px !important;
+  }
+  .view-slideshow,
+  .view-slideshow .views-row
+  {
+    width: 370px;
+    height: 1734px;
+  }
+  .view-slideshow strong.balloon
+  {
+    background: url("../images/onix/balloon_370.png") no-repeat scroll center top transparent !important;
+    font-size: 28px;
+    height: 184px;
+    line-height: 23px;
+    padding: 35px 20px 0 39px;
+    right: 5px;
+    top: 86px;
+    width: 144px;
+  }
+  #block-views-slideshow-block
+  {
+    height: 2045px;
+  }
+  #block-views-slideshow-block.expanded
+  {
+    height: 830px;
+  }
+  
+  /* solutions */
+  .view-solutions .attachment .view-solutions,
+  .view-solutions .attachment .views-row
+  {
+    width: 370px;
+    height: 500px;
+  }
+  .view-solutions .s-prev,
+  .view-solutions .s-next
+  {
+    top: 230px;
+  }
+  
   #block-views-solutions-block
   {
-    top: 360px;
+    top: 290px;
+  }
+  #page-wrapper, 
+  .region-bottom
+  {
+    width: 370px;
   }
   .header-content
   {
     position: static;
+    padding-top: 15px;
   }
-  #block-views-slideshow-block
+  #navigation
   {
-    height: 1734px;
+    margin-right: 12px;
+  }
+  #header
+  {
+    height: 85px;
+  }
+  
+  /* projects */
+  #block-views-projects-block
+  {
+    overflow: hidden;
+  }
+  .view-projects h3.ui-state-active
+  {
+    background-position: 70px -44px;
+  }
+  .view-projects h3
+  {
+    background-position: 70px 44px;
+  }
+  .view-projects .images
+  {
+    width: 330px;
+    height: 535px;
+    overflow: hidden;
+  }
+  .view-projects .images img
+  {
+    max-width: 330px;
+  }
+  .view-projects .proyectos-tab
+  {
+    padding: 10px;
+  }
+  .view-projects .body
+  {
+    float: right;
+    width: 200px;
+  }
+  
+  /* knowledge */
+  .view-knowledge,
+  .view-knowledge .views-row
+  {
+    width: 370px;
+    height: 1620px;
+  }
+  .knowledge-nav
+  {
+    position: static;
+  }
+  #block-views-knowledge-block h2
+  {
+    font-size: 54px;
+  }
+  
+  /* contact */
+  #block-webform-client-block-15
+  {
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+  }
+  #webform-client-form-15
+  {
+    width: auto;
+  }
+  #webform-client-form-15 .form-item label
+  {
+    float: none;
+  }
+  #webform-client-form-15 .form-submit
+  {
+    margin-right: 35px;
+  }
+  #webform-client-form-15 .webform-component
+  {
+    height: auto;
+  }
+  #webform-client-form-15 .webform-component input
+  {
+    width: 225px;
+  }
+  #webform-client-form-15 .form-textarea-wrapper textarea
+  {
+    width: 235px;
+    height: 130px;
+  }
+  #block-webform-client-block-15 .field-items
+  {
+    position: absolute;
+    top: 348px;
+    right: 26px;
   }
 }

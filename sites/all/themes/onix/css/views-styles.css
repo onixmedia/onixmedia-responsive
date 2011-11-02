@@ -149,6 +149,31 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+.view-solutions .s-prev
+{
+  background: url('../images/onix/stage_prev.png') no-repeat center top;
+  width: 30px;
+  height: 59px;
+  position: absolute;
+  z-index: 1;
+  left: 15px;
+  cursor: pointer;
+}
+.view-solutions .s-prev.disabled,
+.view-solutions .s-next.disabled
+{
+  display: none !important;
+}
+.view-solutions .s-next
+{
+  background: url('../images/onix/stage_next.png') no-repeat center top;
+  width: 30px;
+  height: 59px;
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  cursor: pointer;
+}
 .view-solutions .attachment .view-solutions
 {
   overflow: hidden;

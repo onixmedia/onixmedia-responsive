@@ -67,9 +67,23 @@
  * @param $hook
  *   The name of the template being rendered ("html" in this case.)
  */
-/* -- Delete this line if you want to use this function
-function onix_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
+function onix_preprocess_html(&$variables, $hook) 
+{
+  // calculate device-specific guidelines
+  $ipad = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPad');
+  $iphone = (bool) strpos($_SERVER['HTTP_USER_AGENT'],'iPhone');
+  
+  $width = ($ipad) ? '752' : '370';
+  $viewport = array(
+    '#tag' => 'meta',
+    '#attributes' => array(
+      'name' => 'viewport', 
+      'content' => "width=$width, user-scalable=no",
+    ));
+  drupal_add_html_head($viewport, 'viewport');
+  
+  // indicate if its mobile
+  drupal_add_js(array('onix'=>array('mobile'=> ($ipad or $iphone) )), 'setting');
 
   // The body tag's classes are controlled by the $classes_array variable. To
   // remove a class from $classes_array, use array_diff().
