@@ -186,10 +186,7 @@ function onix_features_home_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Reiniciar';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['expose']['items_per_page_options_all'] = 0;
+  $handler->display->display_options['pager']['options']['items_per_page'] = '5';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = 0;
@@ -199,8 +196,8 @@ function onix_features_home_views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Proyectos';
-  $handler->display->display_options['header']['area']['empty'] = TRUE;
-  $handler->display->display_options['header']['area']['content'] = 'Somos apasionados de la tecnología, estas son algunas colaboraciones con marcas que han innovado a través de ella y con nuestra ayuda.
+  $handler->display->display_options['header']['area']['empty'] = FALSE;
+  $handler->display->display_options['header']['area']['content'] = 'We capture one of the top concentration of men ages 18-34 online*, driving over 45.0MM unique views and 682MM page views each month with leading sites including IGN and AskMen.
 ';
   $handler->display->display_options['header']['area']['format'] = 'filtered_html';
   $handler->display->display_options['header']['area']['tokenize'] = 0;
@@ -441,7 +438,10 @@ function onix_features_home_views_default_views() {
   $handler->display->display_options['fields']['nothing_1']['table'] = 'views';
   $handler->display->display_options['fields']['nothing_1']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_1']['label'] = '';
-  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="images clearfix">[field_projects_image][field_projects_image_1][field_projects_image_2]</div>
+  $handler->display->display_options['fields']['nothing_1']['alter']['text'] = '<div class="images clearfix">
+<span class="big">[field_projects_image]</span>
+<span class="med">[field_projects_image_1]</span>
+<span class="small">[field_projects_image_2]</span></div>
 <div class="subtitle">[field_projects_subtitle]</div>
 <div class="body">[body]</div>';
   $handler->display->display_options['fields']['nothing_1']['alter']['make_link'] = 0;
@@ -499,11 +499,14 @@ function onix_features_home_views_default_views() {
     t('- All -'),
     t('Offset'),
     t('Proyectos'),
-    t('Somos apasionados de la tecnología, estas son algunas colaboraciones con marcas que han innovado a través de ella y con nuestra ayuda.
+    t('We capture one of the top concentration of men ages 18-34 online*, driving over 45.0MM unique views and 682MM page views each month with leading sites including IGN and AskMen.
 '),
     t('[title]
 <span class="type">[field_projects_type]</span>'),
-    t('<div class="images clearfix">[field_projects_image][field_projects_image_1][field_projects_image_2]</div>
+    t('<div class="images clearfix">
+<span class="big">[field_projects_image]</span>
+<span class="med">[field_projects_image_1]</span>
+<span class="small">[field_projects_image_2]</span></div>
 <div class="subtitle">[field_projects_subtitle]</div>
 <div class="body">[body]</div>'),
     t('Block'),
@@ -856,6 +859,7 @@ function onix_features_home_views_default_views() {
   $handler->display->display_options['fields']['body']['hide_empty'] = 0;
   $handler->display->display_options['fields']['body']['empty_zero'] = 0;
   $handler->display->display_options['fields']['body']['hide_alter_empty'] = 0;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
   $handler->display->display_options['fields']['body']['settings'] = array(
     'trim_length' => '600',
   );
